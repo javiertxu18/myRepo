@@ -70,10 +70,11 @@ de "requirements.txt", en este fichero encontramos todas las librerías
 utilizadas en el proyecto con sus respectivas versiones.
 
 ## Test unitario
-Para ejecutar un test unitario, ir al terminal y ejecutar el siguiente comando:
+Para ejecutar tests unitarios:
 
 ```bash
-python3 -m pytest
+python3 -m pytest -s
+python3 -m pytest -v
 ```
 
 ## Librerías a destacar

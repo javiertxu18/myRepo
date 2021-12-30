@@ -75,7 +75,6 @@ Para ejecutar tests unitarios:
 ```bash
 python3 -m pytest -s
 python3 -m pytest -v
-<<<<<<< HEAD
 ```
 
 ## Github

@@ -1,7 +1,6 @@
 import hashlib
 import logging
 import sys
-
 from multipledispatch import dispatch
 
 # -----------------------------------------------------------------------------------------------
@@ -48,9 +47,13 @@ def setLogger():
 #   El logger
 @dispatch(str)
 def setLogger(name):
-    if setLogger():
-        return getLogger(name)
-    return False
+    try:
+        if setLogger():
+            return getLogger(name)
+        return False
+    except Exception as e:
+        print("Error configurando el logger: " + str(e))
+        return False
 
 
 # -----------------------------------------------------------------------------------------------

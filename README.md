@@ -1,6 +1,17 @@
 # Repositorio: myRepo
 Este repositorio contiene la práctica 3 del máster en big data.
 
+Versiones de pip3 y Python3:
+
+```bash
+    python3 --version
+    Python 3.8.10
+
+    pip3 --version
+    pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
+```
+
+
 ## Enunciado de la práctica 3
 Práctica 3. Entornos de desarrollo. 
 

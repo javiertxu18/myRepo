@@ -77,6 +77,50 @@ python3 -m pytest -s
 python3 -m pytest -v
 ```
 
+## Github
+Para ver las branches (ramas)
+```bash
+    git branch
+```
+Para crear una branch nueva
+```bash
+    git branch branchName
+```
+Para ver ficheros añadidos al commit
+```bash
+    git status
+```
+Para añadir ficheros al commit
+```bash
+    git add filePath
+```
+Para quitar todos los ficheros del commit
+```bash
+    git reset
+```
+Para quitar 1 fichero del commit
+```bash
+    git reset fileName
+```
+Para hacer un commit
+```bash
+    git commit -m "mensaje"
+```
+Para hacer un push y que se suba a github (*Pide usuario y token*)
+```bash
+    git push
+```
+Para hacer un push de una branch nueva
+```bash
+    git push -u origin branchName
+```
+Para hacer un merge de 2 branches
+```bash
+    git checkout a  #  Vamos a la rama master (a)
+    git merge b     # Traemos lo de la rama b a la a y lo juntamos
+    git commit -a   # Guardamos los cambios
+```
+
 ## Librerías a destacar
 
 *configParser*: Para leer y escribir en el fichero '/config.ini'

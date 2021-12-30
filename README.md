@@ -70,15 +70,72 @@ de "requirements.txt", en este fichero encontramos todas las librerías
 utilizadas en el proyecto con sus respectivas versiones.
 
 ## Test unitario
-Para ejecutar un test unitario, ir al terminal y ejecutar el siguiente comando:
+Para ejecutar tests unitarios:
 
 ```bash
-python3 -m pytest
+python3 -m pytest -s
+python3 -m pytest -v
+<<<<<<< HEAD
 ```
 
+## Github
+Para ver las branches (ramas)
+```bash
+    git branch
+```
+Para crear una branch nueva
+```bash
+    git branch branchName
+```
+Para ver ficheros añadidos al commit
+```bash
+    git status
+```
+Para añadir ficheros al commit
+```bash
+    git add filePath
+```
+Para quitar todos los ficheros del commit
+```bash
+    git reset
+```
+Para quitar 1 fichero del commit
+```bash
+    git reset fileName
+```
+Para hacer un commit
+```bash
+    git commit -m "mensaje"
+```
+Para hacer un push y que se suba a github (*Pide usuario y token*)
+```bash
+    git push
+```
+Para hacer un push de una branch nueva
+```bash
+    git push -u origin branchName
+```
+Para hacer un merge de 2 branches
+```bash
+    git checkout a  #  Vamos a la rama master (a)
+    git merge b     # Traemos lo de la rama b a la a y lo juntamos
+    git commit -a   # Guardamos los cambios
+```
+Para borrar los commits (remotos) de una rama en específico de un hash en adelante:
+```bash
+    git push -f origin <last_known_good_commit>:<branch_name>
+```
+Para borrar los commits (locales) de una rama en específico de un hash en adelante:
+```bash
+    git reset --hard <last_known_good_commit>
+```
+En caso de que nuestro branch esté por delante del 'origin/main' por X commits,
+ejecutar el siguiente comando:
+```bash
+    git fetch -p
+```
 ## Librerías a destacar
 
 *configParser*: Para leer y escribir en el fichero '/config.ini'
 
 *logger*: Para mostrar por pantalla errores y mensajes y guardar un log en '/.log'
-

@@ -5,7 +5,6 @@ from src.main.scripts.functions import generalFunctions
 
 
 # -----------------------------------------------------------------------------------------------
-
 # DESC:
 #   Configura el config parser (Para leer y escribir en el fichero config.ini)
 #   Configuramos el logger
@@ -45,6 +44,14 @@ def setConfig():
         # Este error lo mostramos por pantalla ya que el logger no está configurado.
         print("Error en setConfig(): " + str(e))
         pass
+
+# -----------------------------------------------------------------------------------------------
+# DESC:
+#   Devuelve el configParser para que se pueda leer el fichero config.ini cómodamente
+# Params:
+#   No tiene
+# Return:
+#   configParser si ha ido bien, False si ha ido mal
 
 
 def readConfig():

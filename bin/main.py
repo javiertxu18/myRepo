@@ -4,16 +4,12 @@ import sys
 import logging
 
 if __name__ == '__main__':
-    print("Inicio Programa")
-
-    # Preparamos la configuración de "config.ini"
+    # Configuración inicial
     inOutFunctions.setConfig()
-
-    print(logging.DEBUG)
-
     logger = generalFunctions.getLogger("MAIN")
 
-    logger.error("Peter")
+    logger.info("Inicio Programa")
 
     g = Game()
-    print("Fin Programa")
+
+    logger.info("Fin Programa")

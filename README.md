@@ -1,5 +1,5 @@
 # Repositorio: myRepo
-Este repositorio contiene la práctica 3 del máster en big data.
+Este repositorio contiene la práctica 3 del máster en big data. Y la teoría que yo vea conveniente tener.
 
 Versiones de pip3 y Python3:
 
@@ -73,9 +73,24 @@ utilizadas en el proyecto con sus respectivas versiones.
 Para ejecutar tests unitarios:
 
 ```bash
-python3 -m pytest -s
-python3 -m pytest -v
+    python3 -m pytest -s
+    python3 -m pytest -v
 ```
+## Flake8
+He creado el fichero /.flake8 con el siguiente contenido
+```bash
+    [flake8]
+        ignore = E722           # Para que no me moleste el bare except
+        max-line-length = 120   # Para cambiar el largo máximo a 120
+        exclude = src/test/*    # Para omitir los ficheros de tests
+        max-complexity = 8      # Para definir una complejidad ciclomática
+```
+
+## Librerías a destacar
+
+*configParser*: Para leer y escribir en el fichero '/config.ini'
+
+*logger*: Para mostrar por pantalla errores y mensajes y guardar un log en '/.log'
 
 ## Github
 Para ver las branches (ramas)
@@ -133,8 +148,3 @@ ejecutar el siguiente comando:
 ```bash
     git fetch -p
 ```
-## Librerías a destacar
-
-*configParser*: Para leer y escribir en el fichero '/config.ini'
-
-*logger*: Para mostrar por pantalla errores y mensajes y guardar un log en '/.log'

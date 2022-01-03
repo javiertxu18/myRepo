@@ -1,5 +1,6 @@
 # Repositorio: myRepo
-Este repositorio contiene la práctica 3 del máster en big data. Y la teoría que yo vea conveniente tener.
+Este repositorio contiene la práctica 3 del máster en big data. 
+Y la teoría que yo vea conveniente tener.
 
 Versiones de pip3 y Python3:
 
@@ -11,6 +12,7 @@ Versiones de pip3 y Python3:
     pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
 ```
 
+### Autor: *Javier Herrero*
 
 ## Enunciado de la práctica 3
 Práctica 3. Entornos de desarrollo. 
@@ -28,7 +30,7 @@ Flake8. Tener cualquier tipo de “advertencia de calidad” por debajo de 5 rep
 Sin contar las advertencias de tipo complejidad ciclomática.
 Ejemplo:
 
-```python
+```bash
 flake8 --statistics src/main/
     2 E302 expected 2 blank lines, found 1
     1 E501 line too long (98 > 79 characters)
@@ -42,7 +44,7 @@ advertencias.
 Ejemplo para complecjidad ciclomática 2:
 
 
-```python
+```bash
 flake8 --max-complexity 2 --statistics src/main/
     3 C901 'Persona.dividir' is too complex (4)
 ```
@@ -91,6 +93,11 @@ He creado el fichero /.flake8 con el siguiente contenido
 *configParser*: Para leer y escribir en el fichero '/config.ini'
 
 *logger*: Para mostrar por pantalla errores y mensajes y guardar un log en '/.log'
+
+*multiple dispatch*: Para la sobrecarga de operadores.
+
+*pandas*: Para gestionar la lectura y escritura de archivos, y el análisis de sus
+datos.
 
 ## Github
 Para ver las branches (ramas)

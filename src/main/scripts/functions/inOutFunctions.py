@@ -13,7 +13,7 @@ from src.main.scripts.functions import generalFunctions
 # Return:
 #   Nada
 # Llamar a esta función solo desde el main.py
-def setConfig():
+def setConfig(logger_level = 30):
     # Preparamos el logger
     generalFunctions.setLogger()
 
@@ -30,7 +30,7 @@ def setConfig():
         # Escribimos en el configParser (No en el fichero)
         conf['DEFAULT']['root_path'] = sys.path[1]
         conf['DEFAULT']['config_path'] = conf['DEFAULT']['root_path'] + "/config.ini"
-        conf['DEFAULT']['logger_level'] = "30"  # Nivel del logger por defecto
+        conf['DEFAULT']['logger_level'] = str(logger_level)  # Nivel del logger por defecto
 
         # Creamos una key nueva para guardar datos sobre los ficheros
         conf['game_files'] = {}

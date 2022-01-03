@@ -80,7 +80,9 @@ class Game(Objective):
 
     def exitMenu(self):
         self.logger.info("Saliendo de menú")
-        print("salir")
+        print("\nSaliendo ....")
+        self.logger.info("Fin Programa.")
+        return exit(0)
 
     # -----------------------------------------------------------------------------------------------
 

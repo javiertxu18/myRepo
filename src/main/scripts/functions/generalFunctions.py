@@ -77,8 +77,8 @@ def getLogger(name):
 
     # Preparamos el logger
     logger = logging.getLogger(str(name))
-    logger.setLevel(level)
     setLogger()
+    logger.setLevel(10)
 
     # Añadimos un Handler al logger para que muestre por consola los mensajes
     console = logging.StreamHandler()

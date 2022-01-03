@@ -5,12 +5,12 @@ import logging
 
 if __name__ == '__main__':
     # Configuración inicial
-    inOutFunctions.setConfig(10)
+    inOutFunctions.setConfig(30)
     logger = generalFunctions.getLogger("MAIN")
 
-    logger.info("Inicio Programa")
+    logger.info("Inicio Programa.")
 
     g = Game()
     g.startMenu()
 
-    logger.info("Fin Programa")
+    logger.info("Fin Programa.")

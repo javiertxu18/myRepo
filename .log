@@ -1,6 +1,6 @@
-2022-01-03 15:49:09 INFO(MAIN) main.py:line(11) -> Inicio Programa
-2022-01-03 15:49:09 DEBUG(User) User.py:line(14) -> Creamos el usuario guest
-2022-01-03 15:49:09 DEBUG(User) User.py:line(45) -> Actualizamos el score del usuario guest
-2022-01-03 15:49:09 INFO(Game) Game.py:line(26) -> Iniciando menú
-2022-01-03 15:49:15 INFO(Game) Game.py:line(62) -> Jugando juego
-2022-01-03 15:49:15 INFO(Game) Game.py:line(64) -> Fin jugando juego
+2022-01-03 16:05:21 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-03 16:05:21 DEBUG(User) User.py:line(14) -> Creamos el usuario guest
+2022-01-03 16:05:21 DEBUG(User) User.py:line(45) -> Actualizamos el score del usuario guest
+2022-01-03 16:05:21 INFO(Game) Game.py:line(26) -> Iniciando menú
+2022-01-03 16:05:23 INFO(Game) Game.py:line(82) -> Saliendo de menú
+2022-01-03 16:05:23 INFO(Game) Game.py:line(84) -> Fin Programa.

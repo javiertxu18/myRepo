@@ -92,6 +92,34 @@ He creado el fichero /.flake8 con el siguiente contenido
 
 *logger*: Para mostrar por pantalla errores y mensajes y guardar un log en '/.log'
 
+*pandas*: Para gestionar la lectura/escritura de ficheros y el análisis de los datos.
+
+*multipledispatch*: Para poder usar la sobrecarga de operadores en python3.
+
+## Cómo hacer un switch en python sin aumentar la complejidad ciclomática
+
+Código extraído de *src/main/scripts/objetos/Game.py* línea 52
+
+```python
+52    # Alternativa a Switch
+53    avOpt = {1: self.playGame, 2: self.showRankings, 0: self.exitMenu}
+54    result = avOpt.get(userOption, 'Default controlado por excepciones')
+55    result()
+```
+
+avOpt: Es un diccionario. Este diccionario en específico contiene 3 elementos, cada 
+uno de ellos separado en 2 partes separadas por dos puntos " : ". La parte de la izquierda sería el *case* de un switch,
+y la derecha lo que iría dentro del case. En este caso, hemos metido los *instancemethods* (referencias) de las
+funciones que queremos que se ejecuten en cada caso.
+
+*result = avOpt.get(userOption, 'Default controlado por excepciones')*: Hacemos un
+*.get(x,y)* del diccionario y lo guardamos en una variable. *x* sería el valor del
+parámetro de un switch, y lo que tendría que coincidir con la parte de la izqueirda de los elementos
+del diccionario. *y* es el default, en caso de no cumplirse ningún case, devuelve lo que
+hayamos introducido por parámetros.
+
+*result()*: Llamamos al método referenciado.
+
 ## Github
 Para ver las branches (ramas)
 ```bash

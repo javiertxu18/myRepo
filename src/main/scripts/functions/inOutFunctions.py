@@ -1,6 +1,9 @@
 import configparser
 import sys
 import inspect
+import pandas as pd
+from multipledispatch import dispatch
+
 from src.main.scripts.functions import generalFunctions
 
 
@@ -68,3 +71,25 @@ def readConfig():
         logger = generalFunctions.getLogger("inOutFunctions")
         logger.error(str(e))
         return False
+
+
+# -----------------------------------------------------------------------------------------------
+# DESC:
+#   Añade 1 al score del usuario pasado por parámetros en ranking.csv
+# Params:
+#   userName: Nombre de usuario
+# Return:
+#   True si ha ido bien
+#   False si ha ido mal
+
+@dispatch(str)
+def addScore(userName):
+    logger = generalFunctions.getLogger("inOutFunctions")
+    logger.info("Añadimos 1 a la score del usuario " + str(userName))
+
+    # Comprobamos que el usuario existe
+    logger.debug("Comprobamos que el usuario existe")
+    df = pd.read_csv(readConfig()["game_files"]["users_path"])
+    print(df)
+
+# -----------------------------------------------------------------------------------------------

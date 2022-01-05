@@ -2,6 +2,7 @@ import hashlib
 import logging
 import sys
 from multipledispatch import dispatch
+from src.main.scripts.functions import inOutFunctions
 
 # -----------------------------------------------------------------------------------------------
 
@@ -9,7 +10,6 @@ from multipledispatch import dispatch
 # Params:
 #   str: El string que queremos encriptar
 # Return: El string encriptado.
-from src.main.scripts.functions import inOutFunctions
 
 
 @dispatch(str)

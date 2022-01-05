@@ -2,6 +2,7 @@ import hashlib
 import logging
 import sys
 from multipledispatch import dispatch
+from src.main.scripts.functions import inOutFunctions
 
 # -----------------------------------------------------------------------------------------------
 
@@ -9,7 +10,6 @@ from multipledispatch import dispatch
 # Params:
 #   str: El string que queremos encriptar
 # Return: El string encriptado.
-from src.main.scripts.functions import inOutFunctions
 
 
 @dispatch(str)
@@ -77,7 +77,8 @@ def getLogger(name):
 
     # Preparamos el logger
     logger = logging.getLogger(str(name))
-    logger.setLevel(level)
+    setLogger()
+    logger.setLevel(10)
 
     # Añadimos un Handler al logger para que muestre por consola los mensajes
     console = logging.StreamHandler()

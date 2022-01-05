@@ -1,6 +1,9 @@
 import configparser
 import sys
 import inspect
+import pandas as pd
+from multipledispatch import dispatch
+
 from src.main.scripts.functions import generalFunctions
 
 
@@ -13,7 +16,7 @@ from src.main.scripts.functions import generalFunctions
 # Return:
 #   Nada
 # Llamar a esta función solo desde el main.py
-def setConfig():
+def setConfig(logger_level=30):
     # Preparamos el logger
     generalFunctions.setLogger()
 
@@ -30,12 +33,13 @@ def setConfig():
         # Escribimos en el configParser (No en el fichero)
         conf['DEFAULT']['root_path'] = sys.path[1]
         conf['DEFAULT']['config_path'] = conf['DEFAULT']['root_path'] + "/config.ini"
-        conf['DEFAULT']['logger_level'] = "30"  # Nivel del logger por defecto
+        conf['DEFAULT']['logger_level'] = str(logger_level)  # Nivel del logger por defecto
 
         # Creamos una key nueva para guardar datos sobre los ficheros
         conf['game_files'] = {}
         conf['game_files']["ranking_path"] = conf['DEFAULT']['root_path'] + "/src/main/resources/ranking.csv"
         conf['game_files']["users_path"] = conf['DEFAULT']['root_path'] + "/src/main/resources/users.csv"
+        conf['game_files']["game_instr_path"] = conf['DEFAULT']['root_path'] + "/src/main/resources/game_instr.json"
 
         # Sobreescribimos el fichero y guardamos la info nueva
         with open(conf['DEFAULT']['config_path'], 'w') as configfile:
@@ -44,6 +48,7 @@ def setConfig():
         # Este error lo mostramos por pantalla ya que el logger no está configurado.
         print("Error en setConfig(): " + str(e))
         pass
+
 
 # -----------------------------------------------------------------------------------------------
 # DESC:
@@ -66,3 +71,25 @@ def readConfig():
         logger = generalFunctions.getLogger("inOutFunctions")
         logger.error(str(e))
         return False
+
+
+# -----------------------------------------------------------------------------------------------
+# DESC:
+#   Añade 1 al score del usuario pasado por parámetros en ranking.csv
+# Params:
+#   userName: Nombre de usuario
+# Return:
+#   True si ha ido bien
+#   False si ha ido mal
+
+@dispatch(str)
+def addScore(userName):
+    logger = generalFunctions.getLogger("inOutFunctions")
+    logger.info("Añadimos 1 a la score del usuario " + str(userName))
+
+    # Comprobamos que el usuario existe
+    logger.debug("Comprobamos que el usuario existe")
+    df = pd.read_csv(readConfig()["game_files"]["users_path"])
+    print(df)
+
+# -----------------------------------------------------------------------------------------------

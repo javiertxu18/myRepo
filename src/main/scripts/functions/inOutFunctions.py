@@ -13,7 +13,7 @@ from src.main.scripts.functions import generalFunctions
 # Return:
 #   Nada
 # Llamar a esta función solo desde el main.py
-def setConfig(logger_level = 30):
+def setConfig(logger_level=30):
     # Preparamos el logger
     generalFunctions.setLogger()
 
@@ -36,6 +36,7 @@ def setConfig(logger_level = 30):
         conf['game_files'] = {}
         conf['game_files']["ranking_path"] = conf['DEFAULT']['root_path'] + "/src/main/resources/ranking.csv"
         conf['game_files']["users_path"] = conf['DEFAULT']['root_path'] + "/src/main/resources/users.csv"
+        conf['game_files']["game_instr_path"] = conf['DEFAULT']['root_path'] + "/src/main/resources/game_instr.json"
 
         # Sobreescribimos el fichero y guardamos la info nueva
         with open(conf['DEFAULT']['config_path'], 'w') as configfile:
@@ -44,6 +45,7 @@ def setConfig(logger_level = 30):
         # Este error lo mostramos por pantalla ya que el logger no está configurado.
         print("Error en setConfig(): " + str(e))
         pass
+
 
 # -----------------------------------------------------------------------------------------------
 # DESC:

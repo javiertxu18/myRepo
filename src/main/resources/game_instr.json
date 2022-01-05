@@ -1,0 +1,21 @@
+{
+  "Introducción":{
+    "0":"El juego consiste de 3 fases:"
+  },
+  "Fase 1":{
+    "0":"Admin introduce una frase a adivinar y un número máximo de intentos para adivinarlo.",
+    "1":"Pide al usuario adivinar el número de palabras (ej1) en la frase.",
+    "2":"Si el usuario se equivoca, se le indica si el numero es mayor o menor y el número de intentos restantes."
+  },
+  "Fase 2":{
+    "0":"Una vez haya adivinado el número de palabras, pide al usuario si desea adivinar letras o palabras:",
+    "1":"Letras: Se pide la letra. Muestra al usuario las letras que se van adivinando en la frase. Si se equivoca se resta 1 intento.",
+    "2":"Palabras: Se pide la palabra. Muestra al usuario las palabras que se van adivinando en la frase. Si se equivoca se resta 1 intento."
+  },
+  "Fase 3":{
+    "0":"El usuario puede intentar adivinar la frase en todo momento.",
+    "1":"Adivinar frase: Si se equivoca se resta 1 intento.",
+    "2":"El programa termina cuando el usuario ha adivinado la frase o si se supera el máximo número de intentos.",
+    "3":"Al final independientemente de haber adivinado o no, muestra los intentos insertados por tipo letra o palabra."
+  }
+}

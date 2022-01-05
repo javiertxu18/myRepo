@@ -29,23 +29,23 @@ class Game(Objective):
 
         while True:
             print("MENÚ - Adivina la frase")
-            print("1 - Jugar")
-            print("2 - Ver ranking")
-            print("0 - Salir")
+            print("\n\t1 - Jugar")
+            print("\t2 - Ver ranking")
+            print("\t0 - Salir")
 
             # Comprobamos que el usuario ha insertado un valor válido
             try:
-                userOption = int(input("Opción: "))
+                userOption = int(input("\nOpción: "))
 
                 if userOption < 0 or userOption > 2:
-                    raise ValueError("Valor fuera de límites. Introduzca un valor numérico entre el 0 y el 2.")
+                    raise ValueError("\tValor fuera de límites. Introduzca un valor numérico entre el 0 y el 2.")
 
             except ValueError as ve:
-                print("\nValor no válido. Introduzca un valor numérico entre el 0 y el 2.\n")
+                print("\n\tValor no válido. Introduzca un valor numérico entre el 0 y el 2.\n")
                 self.logger.error(str(ve))
                 continue
             except Exception as e:
-                print("\nError, valor introducido no válido. Introduzca un valor numérico entre el 0 y el 2.\n")
+                print("\n\tError, valor introducido no válido. Introduzca un valor numérico entre el 0 y el 2.\n")
                 self.logger.error(str(e))
                 continue
 
@@ -60,8 +60,56 @@ class Game(Objective):
 
     def playGame(self):
         self.logger.info("Jugando juego")
-        print("jugar")
+        self.menuJuego()
         self.logger.info("Fin jugando juego")
+
+    # Menú juego
+    def menuJuego(self):
+
+        while True:
+            print("\nJUEGO - Adivina la frase\n\n\t1 - Jugar\n\t2 - Ver instrucciones\n\t0 - Volver a menú principal")
+            try:
+                opUser = int(input("\nOpción: "))
+
+                if opUser < 0 or opUser > 2:
+                    raise Exception
+
+            except Exception:
+                print("\n\tError, introduzca un número entre el 0 y el 2.\n")
+                continue
+            avOp = {0: self.myBreak, 1: self.play, 2: self.instr}
+            result = avOp.get(opUser, "Default controlado por excepciones")
+
+            if result() == -1:
+                break
+
+    def myBreak(self):
+        return -1
+
+    def play(self):
+        print("pl")
+
+    def instr(self):
+        print("\n\tInstrucciones del juego")
+
+        self.logger.info("Mostramos las instrucciones.")
+        config = inOutFunctions.readConfig()
+
+        self.logger.debug("Guardamos la info del json en un dataframe")
+        df = pd.read_json(config['game_files']["game_instr_path"])
+
+        self.logger.debug("Mostramos la info del dataframe")
+        for x in df:
+            print("\n\t" + x)  # Mostramos la categoría
+            row = df[x].values.tolist()
+            for y in row:
+                # Si la línea no contiene un string, la saltamos
+                if isinstance(y, float):
+                    continue
+                print("\t\t" + y)
+
+        print("\n\tFin de instrucciones")
+        self.logger.info("Instrucciones mostradas correctamente.")
 
     # Fase1:
 
@@ -78,6 +126,7 @@ class Game(Objective):
 
     # Método para salir del menú
 
+    @dispatch()
     def exitMenu(self):
         self.logger.info("Saliendo de menú")
         print("\nSaliendo ....")

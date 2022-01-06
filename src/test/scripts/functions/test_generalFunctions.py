@@ -1,5 +1,4 @@
 import logging
-
 from src.main.scripts.functions.generalFunctions import encript, setLogger, getLogger
 import pytest
 

@@ -165,6 +165,15 @@ Para hacer un merge de 2 branches
     git merge b     # Traemos lo de la rama b a la a y lo juntamos
     git commit -a   # Guardamos los cambios
 ```
+Si da un error de merge, podemos ir al archivo que dé el error y decidir que versión
+de código se queda (si la local, o la remota) ó ejecutar el siguiente comando para
+usar la mergetool.
+
+El comando irá mostrando cambio a cambio por consola para que decidamos si nos quedamos
+con el local o el remoto.
+```bash
+    git mergetool
+```
 Para borrar los commits (remotos) de una rama en específico de un hash en adelante:
 ```bash
     git push -f origin <last_known_good_commit>:<branch_name>
@@ -178,3 +187,42 @@ ejecutar el siguiente comando:
 ```bash
     git fetch -p
 ```
+
+Para ver las diferencias entre los archivos locales y el repositorio en github:
+```bash
+    git diff fileName
+```
+
+Para hacer un add de una parte de un fichero, no de todo. Una vez ejecutemos el comando
+la consola nos irá mostrando las diferencias entre el archivo en el repositorio
+y el archivo en local, mediante las claves de y (para añadir esa parte) y n (para
+no añadir esa parte) decidiremos qué añadir.
+```bash
+    git add -p fileName
+```
+
+###¿Cómo escribir un buen mensaje de commit?
+
+1- Título del mensaje:
+
+- Descripción general de los cambios realizados en el commit.
+- Máximo 50 carácteres
+
+2- Cuerpo del mensaje_
+
+- Decir los cambios que se han realizado de una forma más detallada
+- El motivo de los cambios
+- Remarcar las partes importantes si las hubiera
+
+###Branching strategies
+
+Hablar con el equipo con el que se esté trabajando para tener una estructura de 
+branching en común.
+
+Hacer unas normas en conjunto con el equipo y dejarlo por escrito (Best practices)
+
+Una estructura de branching podría ser la siguiente:
+- Pruebas
+- Desarrollo
+- Pre-Producción
+- Producción (main)

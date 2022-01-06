@@ -78,6 +78,17 @@ Para ejecutar tests unitarios:
     python3 -m pytest -s
     python3 -m pytest -v
 ```
+
+##Coverage
+Instrucciones para hacer un coverage:
+```bash
+    python3 -m coverage run fileName  # Suele ser el main 
+    python3 -m coverage report --omit="/usr/*"  # Mostrar el report en consola
+    python3 -m coverage html --omit="/usr/*"  # Mostrar el report en web
+```
+
+Para aumentar el porcentaje de coverage, hacer más testeos de código.
+
 ## Flake8
 He creado el fichero /.flake8 con el siguiente contenido
 ```bash

@@ -7,9 +7,9 @@ src/main/scripts/__init__.py                         0      0   100%
 src/main/scripts/functions/__init__.py               0      0   100%
 src/main/scripts/functions/generalFunctions.py      41      8    80%
 src/main/scripts/functions/inOutFunctions.py        41     11    73%
-src/main/scripts/objects/Game.py                   237    210    11%
-src/main/scripts/objects/Objective.py               79     54    32%
+src/main/scripts/objects/Game.py                   241    212    12%
+src/main/scripts/objects/Objective.py               89     63    29%
 src/main/scripts/objects/User.py                    46     35    24%
 src/main/scripts/objects/__init__.py                 0      0   100%
 --------------------------------------------------------------------
-TOTAL                                              455    320    30%
+TOTAL                                              469    331    29%

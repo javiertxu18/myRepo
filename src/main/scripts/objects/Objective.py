@@ -161,3 +161,29 @@ class Objective:
             return False
 
     # -----------------------------------------------------------------------------------------------
+
+    # Funciones estáticas
+
+    # ------------------------------------------------------------------------------------------------------------------------------------------------
+
+    # DESCR:
+    #   Devuelve un string con los elementos de la lista separados por comas.
+    # PARAMS:
+    #   lstObj(lista que queremos poner bonita
+    # RETURN:
+    #   String
+
+    def lstBonita(self, lstObj):
+        dev = ""
+
+        try:
+            for x in range(len(lstObj)):
+
+                if x != (len(lstObj) - 1):
+                    dev += str(lstObj[x]) + ", "
+                else:
+                    dev += str(lstObj[x]) + "."
+
+            return dev
+        except:
+            return None

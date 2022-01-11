@@ -49,13 +49,13 @@ class User:
             dfScoreFile = dfScoreFile.append({'user': str(self.name).lower(), 'score': newScore}, ignore_index=True)
         else:
             self.logger.debug("Actualizamos el score del usuario " + str(self.name))
-            newScore = dfUserScore[dfUserScore["user"] == "guest"].values[0][1] + addScore
+            newScore = dfUserScore[dfUserScore["user"] == str(self.name).lower()].values[0][1] + addScore
 
             # Si el newScore < 0, hacemos que el score sea 0, para que no haya scores negativas
             if newScore < 0:
                 newScore = 0
 
-            dfScoreFile.loc[dfScoreFile['user'] == "guest", 'score'] = newScore
+            dfScoreFile.loc[dfScoreFile['user'] == str(self.name).lower(), 'score'] = newScore
 
         # Actualizamos el score en el objeto
         self.score = newScore

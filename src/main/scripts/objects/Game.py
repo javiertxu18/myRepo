@@ -148,13 +148,7 @@ class Game(Objective):
             result = avOpt.get(opUser, 'Default controlado por excepciones')
             result()
 
-        if self.isAccomplished():
-            print("Enhorabuena, has ganado.")
-            print("Registrando victoria en el ranking ....")
-            #inOutFunctions.addScore(self.activeUser.name)
-            self.activeUser.updateSelfScore(1)
-        else:
-            print("No has ganado")
+        self.isWin(self.isAccomplished())
 
         self.logger.info("Fin juego.")
 
@@ -216,6 +210,25 @@ class Game(Objective):
             self._lstIntentosFrases.append(frase)
             print(f"\tIncorrecto, no ha acertado la frase.\n\tLe quedan {self._tries} intentos.")
 
+    def isWin(self, value):
+        if value:
+            print("\n\tEnhorabuena, has ganado.")
+            print("\tRegistrando victoria en el ranking ....")
+            self.activeUser.updateSelfScore(1)
+        else:
+            print("No has ganado")
+
+        print("\n\tMostrando intentos:")
+        self.showTries()
+
+    def showTries(self):
+        print("\n\tIntentos de letras:")
+        print("\n\t\t" + self.lstBonita(self._lstIntentosLetras))
+        print("\n\tIntentos de palabras:")
+        print("\n\t\t" + self.lstBonita(self._lstIntentosPalabras))
+        print("\n\tIntentos de frases:")
+        print("\n\t\t" + self.lstBonita(self._lstIntentosFrases))
+
     # -----------------------------------------------------------------------------------------------
 
     # Instrucciones
@@ -256,23 +269,13 @@ class Game(Objective):
 
         self.logger.debug("Mostramos la info del usuario activo")
         userInfo = df[df["user"] == str(self.activeUser.name)]
-        print(f"\n\tSu puntuación ha sido de: {userInfo['score'].values[0]}")
-
-        self.logger.debug("Mostramos la posición del usuario")
-        dfPos = df.drop_duplicates(['score'])
-        dfPos = dfPos["score"] == 2
-        for x in range(len(dfPos.values)):
-            if dfPos.values[x]:
-                print("\tSu posición es la " + str(x+1) + " de " + str(len(dfPos.values)) + " (con distinct)\n")
-                break
+        print(f"\n\tSu puntuación ha sido de: {userInfo['score'].values[0]}\n")
 
         self.logger.debug("Ordenamos la información")
         df = df.sort_values(by=['score'], ascending=False)
         self.logger.debug("Mostramos el resto de información")
         for x, y in df.values:
             print(f"\t{x} - {y}")
-
-
 
         self.logger.info("Fin mostrando Rankings")
 
@@ -342,7 +345,6 @@ class Game(Objective):
             self.logger.debug("El nombre de usuario NO existe. Avisamos al usuario.")
             print("\n\tNo existe nungún usuario con ese nombre.")
 
-
     # Método para crear usuario nuevo
     def createUser(self):
         self.logger.debug("Solicitamos la info del usuario a crear.")
@@ -359,11 +361,10 @@ class Game(Objective):
 
         self.logger.info("\tCreando nuevo usuario.")
         print("\n\tCreando usuario nuevo ....")
-        self.activeUser = User(newName,generalFunctions.encript(newPass))
+        self.activeUser = User(newName, generalFunctions.encript(newPass))
         print("\tUsuario creado.")
 
         return True
-
 
     # -----------------------------------------------------------------------------------------------
     # -----------------------------------------------------------------------------------------------

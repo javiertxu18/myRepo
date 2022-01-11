@@ -2434,3 +2434,553 @@ invalid literal for int() with base 10: 'w'
 2022-01-06 17:23:28 INFO(Game) Game.py:line(70) -> Fin jugando juego
 2022-01-06 17:23:34 INFO(Game) Game.py:line(375) -> Saliendo de menú
 2022-01-06 17:23:34 INFO(Game) Game.py:line(377) -> Fin Programa.
+2022-01-11 16:35:16 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 16:35:16 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 16:35:16 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 16:35:16 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 16:35:16 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 16:35:16 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 16:35:16 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 16:35:24 ERROR(Game) Game.py:line(50) -> invalid literal for int() with base 10: ''
+2022-01-11 16:35:24 INFO(Game) Game.py:line(251) -> Mostrando Rankings
+2022-01-11 16:35:24 DEBUG(Game) Game.py:line(254) -> Guardamos la info del ranking en un dataframe
+2022-01-11 16:35:24 DEBUG(Game) Game.py:line(257) -> Mostramos la info del usuario activo
+2022-01-11 16:35:24 DEBUG(Game) Game.py:line(261) -> Mostramos la posición del usuario
+2022-01-11 16:35:24 DEBUG(Game) Game.py:line(269) -> Ordenamos la información
+2022-01-11 16:35:24 DEBUG(Game) Game.py:line(271) -> Mostramos el resto de información
+2022-01-11 16:35:24 INFO(Game) Game.py:line(277) -> Fin mostrando Rankings
+2022-01-11 16:35:41 INFO(Game) Game.py:line(68) -> Jugando juego
+2022-01-11 16:35:46 INFO(Game) Game.py:line(97) -> Jugando al juego.
+2022-01-11 16:35:46 DEBUG(Game) Game.py:line(102) -> Preparamos el target
+2022-01-11 16:36:00 DEBUG(Game) Game.py:line(106) -> Definimos el número de intentos.
+2022-01-11 16:36:02 DEBUG(Game) Game.py:line(113) -> Iniciando fase 1 de juego.
+2022-01-11 16:36:03 DEBUG(Game) Game.py:line(129) -> Iniciando fase 2 de juego.
+2022-01-11 16:36:13 DEBUG(Game) Objective.py:line(156) -> Comprobando si la frase existe
+2022-01-11 16:36:13 DEBUG(Game) Game.py:line(210) -> El jugador ha acertado la frase
+2022-01-11 16:36:13 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 16:36:13 INFO(Game) Game.py:line(159) -> Fin juego.
+2022-01-11 16:36:16 INFO(Game) Game.py:line(70) -> Fin jugando juego
+2022-01-11 16:36:20 INFO(Game) Game.py:line(251) -> Mostrando Rankings
+2022-01-11 16:36:20 DEBUG(Game) Game.py:line(254) -> Guardamos la info del ranking en un dataframe
+2022-01-11 16:36:20 DEBUG(Game) Game.py:line(257) -> Mostramos la info del usuario activo
+2022-01-11 16:36:20 DEBUG(Game) Game.py:line(261) -> Mostramos la posición del usuario
+2022-01-11 16:36:20 DEBUG(Game) Game.py:line(269) -> Ordenamos la información
+2022-01-11 16:36:20 DEBUG(Game) Game.py:line(271) -> Mostramos el resto de información
+2022-01-11 16:36:20 INFO(Game) Game.py:line(277) -> Fin mostrando Rankings
+2022-01-11 16:36:29 INFO(Game) Game.py:line(288) -> Cambiamos de usuario
+2022-01-11 16:36:34 INFO(Game) Game.py:line(314) -> Cambiando de usuario.
+2022-01-11 16:36:34 DEBUG(Game) Game.py:line(316) -> Leyendo csv y guardando información en un dataframe
+2022-01-11 16:36:34 DEBUG(Game) Game.py:line(319) -> Solicitando nombre del usuario ....
+2022-01-11 16:36:37 DEBUG(Game) Game.py:line(322) -> Comprobando que el usuario insertado existe en el csv ....
+2022-01-11 16:36:37 DEBUG(Game) Game.py:line(326) -> El nombre de usuario existe, solicitando contraseña ....
+2022-01-11 16:36:39 DEBUG(Game) Game.py:line(330) -> Sobreescribimos el dataframe con un nuevo dataframe que contiene solo la fila del usuario
+2022-01-11 16:36:39 DEBUG(Game) Game.py:line(335) -> Comparamos las 2 contraseñas, y si coinciden, actualizamos el usuario activo
+2022-01-11 16:36:39 DEBUG(Game) Game.py:line(388) -> Definimos el usuario activo.
+2022-01-11 16:36:39 DEBUG(Game) Game.py:line(402) -> Existe el usuario peter en el fichero csv. Lo marcamos como activo y retornamos True.
+2022-01-11 16:36:39 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe peter
+2022-01-11 16:36:39 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 16:36:39 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 16:36:39 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de peter
+2022-01-11 16:36:39 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario peter
+2022-01-11 16:36:39 ERROR(Game) Game.py:line(310) -> Error inesperado: index 0 is out of bounds for axis 0 with size 0
+2022-01-11 16:36:39 INFO(Game) Game.py:line(288) -> Cambiamos de usuario
+2022-01-11 16:36:54 INFO(Game) Game.py:line(68) -> Jugando juego
+2022-01-11 16:39:16 INFO(Game) Game.py:line(97) -> Jugando al juego.
+2022-01-11 16:39:16 DEBUG(Game) Game.py:line(102) -> Preparamos el target
+2022-01-11 16:39:27 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 16:39:27 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 16:39:27 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 16:39:27 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 16:39:27 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 16:39:27 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 16:39:27 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 16:40:40 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 16:40:40 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 16:40:40 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 16:40:40 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 16:40:40 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 16:40:40 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 16:40:40 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 16:40:43 INFO(Game) Game.py:line(251) -> Mostrando Rankings
+2022-01-11 16:40:43 DEBUG(Game) Game.py:line(254) -> Guardamos la info del ranking en un dataframe
+2022-01-11 16:40:43 DEBUG(Game) Game.py:line(257) -> Mostramos la info del usuario activo
+2022-01-11 16:40:43 DEBUG(Game) Game.py:line(261) -> Mostramos la posición del usuario
+2022-01-11 16:40:43 DEBUG(Game) Game.py:line(269) -> Ordenamos la información
+2022-01-11 16:40:43 DEBUG(Game) Game.py:line(271) -> Mostramos el resto de información
+2022-01-11 16:40:43 INFO(Game) Game.py:line(277) -> Fin mostrando Rankings
+2022-01-11 16:40:56 INFO(Game) Game.py:line(288) -> Cambiamos de usuario
+2022-01-11 16:41:00 DEBUG(Game) Game.py:line(348) -> Solicitamos la info del usuario a crear.
+2022-01-11 16:41:10 INFO(Game) Game.py:line(360) -> 	Creando nuevo usuario.
+2022-01-11 16:41:10 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe juan
+2022-01-11 16:41:10 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 16:41:10 DEBUG(User) User.py:line(87) -> No existe el usuario, lo añadimos al dataframe.
+2022-01-11 16:41:10 DEBUG(User) User.py:line(90) -> Actualizamos el csv con la info del dataframe
+2022-01-11 16:41:10 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de juan
+2022-01-11 16:41:10 DEBUG(User) User.py:line(42) -> Creamos el score del usuario juan
+2022-01-11 16:41:26 INFO(Game) Game.py:line(68) -> Jugando juego
+2022-01-11 16:41:28 INFO(Game) Game.py:line(97) -> Jugando al juego.
+2022-01-11 16:41:28 DEBUG(Game) Game.py:line(102) -> Preparamos el target
+2022-01-11 16:41:30 DEBUG(Game) Game.py:line(106) -> Definimos el número de intentos.
+2022-01-11 16:41:31 DEBUG(Game) Game.py:line(113) -> Iniciando fase 1 de juego.
+2022-01-11 16:41:32 DEBUG(Game) Game.py:line(129) -> Iniciando fase 2 de juego.
+2022-01-11 16:41:35 DEBUG(Game) Objective.py:line(156) -> Comprobando si la frase existe
+2022-01-11 16:41:35 DEBUG(Game) Game.py:line(210) -> El jugador ha acertado la frase
+2022-01-11 16:41:35 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario juan
+2022-01-11 16:42:42 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 16:42:42 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 16:42:42 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 16:42:42 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 16:42:42 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 16:42:42 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 16:42:42 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 16:42:44 INFO(Game) Game.py:line(251) -> Mostrando Rankings
+2022-01-11 16:42:44 DEBUG(Game) Game.py:line(254) -> Guardamos la info del ranking en un dataframe
+2022-01-11 16:42:44 DEBUG(Game) Game.py:line(257) -> Mostramos la info del usuario activo
+2022-01-11 16:42:44 DEBUG(Game) Game.py:line(261) -> Mostramos la posición del usuario
+2022-01-11 16:42:44 DEBUG(Game) Game.py:line(269) -> Ordenamos la información
+2022-01-11 16:42:44 DEBUG(Game) Game.py:line(271) -> Mostramos el resto de información
+2022-01-11 16:42:44 INFO(Game) Game.py:line(277) -> Fin mostrando Rankings
+2022-01-11 16:42:52 INFO(Game) Game.py:line(288) -> Cambiamos de usuario
+2022-01-11 16:42:54 INFO(Game) Game.py:line(314) -> Cambiando de usuario.
+2022-01-11 16:42:54 DEBUG(Game) Game.py:line(316) -> Leyendo csv y guardando información en un dataframe
+2022-01-11 16:42:54 DEBUG(Game) Game.py:line(319) -> Solicitando nombre del usuario ....
+2022-01-11 16:42:57 DEBUG(Game) Game.py:line(322) -> Comprobando que el usuario insertado existe en el csv ....
+2022-01-11 16:42:57 DEBUG(Game) Game.py:line(326) -> El nombre de usuario existe, solicitando contraseña ....
+2022-01-11 16:43:00 DEBUG(Game) Game.py:line(330) -> Sobreescribimos el dataframe con un nuevo dataframe que contiene solo la fila del usuario
+2022-01-11 16:43:00 DEBUG(Game) Game.py:line(335) -> Comparamos las 2 contraseñas, y si coinciden, actualizamos el usuario activo
+2022-01-11 16:43:00 DEBUG(Game) Game.py:line(388) -> Definimos el usuario activo.
+2022-01-11 16:43:00 DEBUG(Game) Game.py:line(402) -> Existe el usuario juan en el fichero csv. Lo marcamos como activo y retornamos True.
+2022-01-11 16:43:00 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe juan
+2022-01-11 16:43:00 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 16:43:00 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 16:43:00 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de juan
+2022-01-11 16:43:00 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario juan
+2022-01-11 16:43:00 INFO(Game) Game.py:line(338) -> Usuario activo actualizado.
+2022-01-11 16:43:05 INFO(Game) Game.py:line(68) -> Jugando juego
+2022-01-11 16:43:08 INFO(Game) Game.py:line(97) -> Jugando al juego.
+2022-01-11 16:43:08 DEBUG(Game) Game.py:line(102) -> Preparamos el target
+2022-01-11 16:43:09 DEBUG(Game) Game.py:line(106) -> Definimos el número de intentos.
+2022-01-11 16:43:10 DEBUG(Game) Game.py:line(113) -> Iniciando fase 1 de juego.
+2022-01-11 16:43:11 DEBUG(Game) Game.py:line(129) -> Iniciando fase 2 de juego.
+2022-01-11 16:43:13 DEBUG(Game) Objective.py:line(156) -> Comprobando si la frase existe
+2022-01-11 16:43:13 DEBUG(Game) Game.py:line(210) -> El jugador ha acertado la frase
+2022-01-11 16:43:13 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario juan
+2022-01-11 16:43:13 INFO(Game) Game.py:line(159) -> Fin juego.
+2022-01-11 16:43:18 INFO(Game) Game.py:line(70) -> Fin jugando juego
+2022-01-11 16:43:19 INFO(Game) Game.py:line(251) -> Mostrando Rankings
+2022-01-11 16:43:19 DEBUG(Game) Game.py:line(254) -> Guardamos la info del ranking en un dataframe
+2022-01-11 16:43:19 DEBUG(Game) Game.py:line(257) -> Mostramos la info del usuario activo
+2022-01-11 16:43:19 DEBUG(Game) Game.py:line(261) -> Mostramos la posición del usuario
+2022-01-11 16:43:19 DEBUG(Game) Game.py:line(269) -> Ordenamos la información
+2022-01-11 16:43:19 DEBUG(Game) Game.py:line(271) -> Mostramos el resto de información
+2022-01-11 16:43:19 INFO(Game) Game.py:line(277) -> Fin mostrando Rankings
+2022-01-11 16:44:55 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 16:44:55 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 16:44:55 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 16:44:55 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 16:44:55 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 16:44:55 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 16:44:55 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 16:45:00 INFO(Game) Game.py:line(288) -> Cambiamos de usuario
+2022-01-11 16:45:07 INFO(Game) Game.py:line(314) -> Cambiando de usuario.
+2022-01-11 16:45:07 DEBUG(Game) Game.py:line(316) -> Leyendo csv y guardando información en un dataframe
+2022-01-11 16:45:07 DEBUG(Game) Game.py:line(319) -> Solicitando nombre del usuario ....
+2022-01-11 16:45:10 DEBUG(Game) Game.py:line(322) -> Comprobando que el usuario insertado existe en el csv ....
+2022-01-11 16:45:10 DEBUG(Game) Game.py:line(326) -> El nombre de usuario existe, solicitando contraseña ....
+2022-01-11 16:45:14 DEBUG(Game) Game.py:line(330) -> Sobreescribimos el dataframe con un nuevo dataframe que contiene solo la fila del usuario
+2022-01-11 16:45:14 DEBUG(Game) Game.py:line(335) -> Comparamos las 2 contraseñas, y si coinciden, actualizamos el usuario activo
+2022-01-11 16:45:14 DEBUG(Game) Game.py:line(388) -> Definimos el usuario activo.
+2022-01-11 16:45:14 DEBUG(Game) Game.py:line(402) -> Existe el usuario juan en el fichero csv. Lo marcamos como activo y retornamos True.
+2022-01-11 16:45:14 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe juan
+2022-01-11 16:45:14 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 16:45:14 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 16:45:14 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de juan
+2022-01-11 16:45:14 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario juan
+2022-01-11 16:45:14 INFO(Game) Game.py:line(338) -> Usuario activo actualizado.
+2022-01-11 16:45:17 INFO(Game) Game.py:line(68) -> Jugando juego
+2022-01-11 16:45:23 INFO(Game) Game.py:line(97) -> Jugando al juego.
+2022-01-11 16:45:23 DEBUG(Game) Game.py:line(102) -> Preparamos el target
+2022-01-11 16:45:25 DEBUG(Game) Game.py:line(106) -> Definimos el número de intentos.
+2022-01-11 16:45:25 DEBUG(Game) Game.py:line(113) -> Iniciando fase 1 de juego.
+2022-01-11 16:45:27 DEBUG(Game) Game.py:line(129) -> Iniciando fase 2 de juego.
+2022-01-11 16:45:30 DEBUG(Game) Objective.py:line(156) -> Comprobando si la frase existe
+2022-01-11 16:45:30 DEBUG(Game) Game.py:line(210) -> El jugador ha acertado la frase
+2022-01-11 16:45:30 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario juan
+2022-01-11 16:45:30 INFO(Game) Game.py:line(159) -> Fin juego.
+2022-01-11 16:45:34 INFO(Game) Game.py:line(70) -> Fin jugando juego
+2022-01-11 16:45:36 INFO(Game) Game.py:line(251) -> Mostrando Rankings
+2022-01-11 16:45:36 DEBUG(Game) Game.py:line(254) -> Guardamos la info del ranking en un dataframe
+2022-01-11 16:45:36 DEBUG(Game) Game.py:line(257) -> Mostramos la info del usuario activo
+2022-01-11 16:45:36 DEBUG(Game) Game.py:line(261) -> Mostramos la posición del usuario
+2022-01-11 16:45:36 DEBUG(Game) Game.py:line(269) -> Ordenamos la información
+2022-01-11 16:45:36 DEBUG(Game) Game.py:line(271) -> Mostramos el resto de información
+2022-01-11 16:45:36 INFO(Game) Game.py:line(277) -> Fin mostrando Rankings
+2022-01-11 16:46:12 INFO(Game) Game.py:line(68) -> Jugando juego
+2022-01-11 16:46:14 INFO(Game) Game.py:line(97) -> Jugando al juego.
+2022-01-11 16:46:14 DEBUG(Game) Game.py:line(102) -> Preparamos el target
+2022-01-11 16:46:16 DEBUG(Game) Game.py:line(106) -> Definimos el número de intentos.
+2022-01-11 16:46:20 DEBUG(Game) Game.py:line(113) -> Iniciando fase 1 de juego.
+2022-01-11 16:46:23 DEBUG(Game) Game.py:line(129) -> Iniciando fase 2 de juego.
+2022-01-11 16:46:36 DEBUG(Game) Objective.py:line(156) -> Comprobando si la frase existe
+2022-01-11 16:46:36 DEBUG(Game) Game.py:line(210) -> El jugador ha acertado la frase
+2022-01-11 16:46:36 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario juan
+2022-01-11 16:46:36 INFO(Game) Game.py:line(159) -> Fin juego.
+2022-01-11 16:46:38 INFO(Game) Game.py:line(70) -> Fin jugando juego
+2022-01-11 16:46:41 INFO(Game) Game.py:line(251) -> Mostrando Rankings
+2022-01-11 16:46:41 DEBUG(Game) Game.py:line(254) -> Guardamos la info del ranking en un dataframe
+2022-01-11 16:46:41 DEBUG(Game) Game.py:line(257) -> Mostramos la info del usuario activo
+2022-01-11 16:46:41 DEBUG(Game) Game.py:line(261) -> Mostramos la posición del usuario
+2022-01-11 16:46:41 DEBUG(Game) Game.py:line(269) -> Ordenamos la información
+2022-01-11 16:46:41 DEBUG(Game) Game.py:line(271) -> Mostramos el resto de información
+2022-01-11 16:46:41 INFO(Game) Game.py:line(277) -> Fin mostrando Rankings
+2022-01-11 16:49:16 INFO(Game) Game.py:line(288) -> Cambiamos de usuario
+2022-01-11 16:49:18 DEBUG(Game) Game.py:line(348) -> Solicitamos la info del usuario a crear.
+2022-01-11 16:49:27 INFO(Game) Game.py:line(360) -> 	Creando nuevo usuario.
+2022-01-11 16:49:27 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe peter
+2022-01-11 16:49:27 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 16:49:27 DEBUG(User) User.py:line(87) -> No existe el usuario, lo añadimos al dataframe.
+2022-01-11 16:49:27 DEBUG(User) User.py:line(90) -> Actualizamos el csv con la info del dataframe
+2022-01-11 16:49:27 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de peter
+2022-01-11 16:49:27 DEBUG(User) User.py:line(42) -> Creamos el score del usuario peter
+2022-01-11 16:49:33 INFO(Game) Game.py:line(251) -> Mostrando Rankings
+2022-01-11 16:49:33 DEBUG(Game) Game.py:line(254) -> Guardamos la info del ranking en un dataframe
+2022-01-11 16:49:33 DEBUG(Game) Game.py:line(257) -> Mostramos la info del usuario activo
+2022-01-11 16:49:33 DEBUG(Game) Game.py:line(261) -> Mostramos la posición del usuario
+2022-01-11 16:49:33 DEBUG(Game) Game.py:line(269) -> Ordenamos la información
+2022-01-11 16:49:33 DEBUG(Game) Game.py:line(271) -> Mostramos el resto de información
+2022-01-11 16:49:33 INFO(Game) Game.py:line(277) -> Fin mostrando Rankings
+2022-01-11 16:53:21 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 16:53:21 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 16:53:21 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 16:53:21 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 16:53:21 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 16:53:21 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 16:53:21 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 16:53:23 INFO(Game) Game.py:line(251) -> Mostrando Rankings
+2022-01-11 16:53:23 DEBUG(Game) Game.py:line(254) -> Guardamos la info del ranking en un dataframe
+2022-01-11 16:53:23 DEBUG(Game) Game.py:line(257) -> Mostramos la info del usuario activo
+2022-01-11 16:53:23 DEBUG(Game) Game.py:line(261) -> Mostramos la posición del usuario
+2022-01-11 16:53:40 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 16:53:40 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 16:53:40 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 16:53:40 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 16:53:40 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 16:53:40 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 16:53:40 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 16:53:45 INFO(Game) Game.py:line(251) -> Mostrando Rankings
+2022-01-11 16:53:45 DEBUG(Game) Game.py:line(254) -> Guardamos la info del ranking en un dataframe
+2022-01-11 16:53:45 DEBUG(Game) Game.py:line(257) -> Mostramos la info del usuario activo
+2022-01-11 16:53:45 DEBUG(Game) Game.py:line(261) -> Mostramos la posición del usuario
+2022-01-11 16:53:45 DEBUG(Game) Game.py:line(272) -> Ordenamos la información
+2022-01-11 16:53:45 DEBUG(Game) Game.py:line(274) -> Mostramos el resto de información
+2022-01-11 16:53:45 INFO(Game) Game.py:line(280) -> Fin mostrando Rankings
+2022-01-11 16:54:10 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 16:54:10 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 16:54:10 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 16:54:10 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 16:54:10 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 16:54:10 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 16:54:10 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 16:54:12 INFO(Game) Game.py:line(251) -> Mostrando Rankings
+2022-01-11 16:54:12 DEBUG(Game) Game.py:line(254) -> Guardamos la info del ranking en un dataframe
+2022-01-11 16:54:12 DEBUG(Game) Game.py:line(257) -> Mostramos la info del usuario activo
+2022-01-11 16:54:12 DEBUG(Game) Game.py:line(261) -> Mostramos la posición del usuario
+2022-01-11 16:54:12 DEBUG(Game) Game.py:line(272) -> Ordenamos la información
+2022-01-11 16:54:12 DEBUG(Game) Game.py:line(274) -> Mostramos el resto de información
+2022-01-11 16:54:12 INFO(Game) Game.py:line(280) -> Fin mostrando Rankings
+2022-01-11 16:55:08 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 16:55:08 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 16:55:08 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 16:55:08 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 16:55:08 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 16:55:08 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 16:55:08 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 16:55:09 ERROR(Game) Game.py:line(50) -> invalid literal for int() with base 10: ''
+2022-01-11 16:55:10 INFO(Game) Game.py:line(251) -> Mostrando Rankings
+2022-01-11 16:55:10 DEBUG(Game) Game.py:line(254) -> Guardamos la info del ranking en un dataframe
+2022-01-11 16:55:10 DEBUG(Game) Game.py:line(257) -> Mostramos la info del usuario activo
+2022-01-11 16:55:10 DEBUG(Game) Game.py:line(261) -> Mostramos la posición del usuario
+2022-01-11 16:55:49 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 16:55:49 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 16:55:49 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 16:55:49 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 16:55:49 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 16:55:49 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 16:55:49 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 16:55:51 INFO(Game) Game.py:line(251) -> Mostrando Rankings
+2022-01-11 16:55:51 DEBUG(Game) Game.py:line(254) -> Guardamos la info del ranking en un dataframe
+2022-01-11 16:55:51 DEBUG(Game) Game.py:line(257) -> Mostramos la info del usuario activo
+2022-01-11 16:55:51 DEBUG(Game) Game.py:line(261) -> Mostramos la posición del usuario
+2022-01-11 16:57:38 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 16:57:38 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 16:57:38 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 16:57:38 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 16:57:38 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 16:57:38 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 16:57:38 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 16:58:07 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 16:58:07 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 16:58:07 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 16:58:07 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 16:58:07 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 16:58:07 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 16:58:07 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 16:58:09 INFO(Game) Game.py:line(251) -> Mostrando Rankings
+2022-01-11 16:58:09 DEBUG(Game) Game.py:line(254) -> Guardamos la info del ranking en un dataframe
+2022-01-11 16:58:09 DEBUG(Game) Game.py:line(257) -> Mostramos la info del usuario activo
+2022-01-11 16:58:09 DEBUG(Game) Game.py:line(261) -> Mostramos la posición del usuario
+2022-01-11 16:58:09 DEBUG(Game) Game.py:line(272) -> Ordenamos la información
+2022-01-11 16:58:09 DEBUG(Game) Game.py:line(274) -> Mostramos el resto de información
+2022-01-11 16:58:09 INFO(Game) Game.py:line(280) -> Fin mostrando Rankings
+2022-01-11 16:58:37 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 16:58:37 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 16:58:37 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 16:58:37 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 16:58:37 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 16:58:37 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 16:58:37 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 16:58:38 INFO(Game) Game.py:line(251) -> Mostrando Rankings
+2022-01-11 16:58:38 DEBUG(Game) Game.py:line(254) -> Guardamos la info del ranking en un dataframe
+2022-01-11 16:58:38 DEBUG(Game) Game.py:line(257) -> Mostramos la info del usuario activo
+2022-01-11 16:58:38 DEBUG(Game) Game.py:line(261) -> Ordenamos la información
+2022-01-11 16:58:38 DEBUG(Game) Game.py:line(263) -> Mostramos el resto de información
+2022-01-11 16:58:38 INFO(Game) Game.py:line(269) -> Fin mostrando Rankings
+2022-01-11 16:59:14 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 16:59:14 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 16:59:14 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 16:59:14 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 16:59:14 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 16:59:14 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 16:59:14 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 16:59:15 INFO(Game) Game.py:line(251) -> Mostrando Rankings
+2022-01-11 16:59:15 DEBUG(Game) Game.py:line(254) -> Guardamos la info del ranking en un dataframe
+2022-01-11 16:59:15 DEBUG(Game) Game.py:line(257) -> Mostramos la info del usuario activo
+2022-01-11 16:59:15 DEBUG(Game) Game.py:line(261) -> Mostramos la posición del usuario
+2022-01-11 16:59:15 DEBUG(Game) Game.py:line(272) -> Ordenamos la información
+2022-01-11 16:59:15 DEBUG(Game) Game.py:line(274) -> Mostramos el resto de información
+2022-01-11 16:59:15 INFO(Game) Game.py:line(280) -> Fin mostrando Rankings
+2022-01-11 16:59:52 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 16:59:52 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 16:59:52 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 16:59:52 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 16:59:52 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 16:59:52 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 16:59:52 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 16:59:53 INFO(Game) Game.py:line(251) -> Mostrando Rankings
+2022-01-11 16:59:53 DEBUG(Game) Game.py:line(254) -> Guardamos la info del ranking en un dataframe
+2022-01-11 16:59:53 DEBUG(Game) Game.py:line(257) -> Mostramos la info del usuario activo
+2022-01-11 16:59:53 DEBUG(Game) Game.py:line(261) -> Mostramos la posición del usuario
+2022-01-11 16:59:53 DEBUG(Game) Game.py:line(272) -> Ordenamos la información
+2022-01-11 16:59:53 DEBUG(Game) Game.py:line(274) -> Mostramos el resto de información
+2022-01-11 16:59:53 INFO(Game) Game.py:line(280) -> Fin mostrando Rankings
+2022-01-11 17:00:12 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 17:00:12 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 17:00:12 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 17:00:13 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 17:00:13 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 17:00:13 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 17:00:13 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 17:00:13 INFO(Game) Game.py:line(251) -> Mostrando Rankings
+2022-01-11 17:00:13 DEBUG(Game) Game.py:line(254) -> Guardamos la info del ranking en un dataframe
+2022-01-11 17:00:13 DEBUG(Game) Game.py:line(257) -> Mostramos la info del usuario activo
+2022-01-11 17:00:13 DEBUG(Game) Game.py:line(261) -> Ordenamos la información
+2022-01-11 17:00:13 DEBUG(Game) Game.py:line(263) -> Mostramos el resto de información
+2022-01-11 17:00:13 INFO(Game) Game.py:line(269) -> Fin mostrando Rankings
+2022-01-11 17:00:28 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 17:00:28 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 17:00:28 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 17:00:28 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 17:00:28 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 17:00:28 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 17:00:28 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 17:00:30 INFO(Game) Game.py:line(251) -> Mostrando Rankings
+2022-01-11 17:00:30 DEBUG(Game) Game.py:line(254) -> Guardamos la info del ranking en un dataframe
+2022-01-11 17:00:30 DEBUG(Game) Game.py:line(257) -> Mostramos la info del usuario activo
+2022-01-11 17:00:30 DEBUG(Game) Game.py:line(261) -> Ordenamos la información
+2022-01-11 17:00:30 DEBUG(Game) Game.py:line(263) -> Mostramos el resto de información
+2022-01-11 17:00:30 INFO(Game) Game.py:line(269) -> Fin mostrando Rankings
+2022-01-11 18:02:18 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 18:02:18 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 18:02:18 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 18:02:18 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 18:02:18 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 18:02:18 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 18:02:18 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 18:02:23 INFO(Game) Game.py:line(281) -> Cambiamos de usuario
+2022-01-11 18:02:25 INFO(Game) Game.py:line(307) -> Cambiando de usuario.
+2022-01-11 18:02:25 DEBUG(Game) Game.py:line(309) -> Leyendo csv y guardando información en un dataframe
+2022-01-11 18:02:25 DEBUG(Game) Game.py:line(312) -> Solicitando nombre del usuario ....
+2022-01-11 18:02:32 DEBUG(Game) Game.py:line(315) -> Comprobando que el usuario insertado existe en el csv ....
+2022-01-11 18:02:32 DEBUG(Game) Game.py:line(335) -> El nombre de usuario NO existe. Avisamos al usuario.
+2022-01-11 18:02:32 INFO(Game) Game.py:line(281) -> Cambiamos de usuario
+2022-01-11 18:02:32 ERROR(Game) Game.py:line(303) -> Error inesperado: invalid literal for int() with base 10: ''
+2022-01-11 18:02:32 INFO(Game) Game.py:line(281) -> Cambiamos de usuario
+2022-01-11 18:02:39 DEBUG(Game) Game.py:line(340) -> Solicitamos la info del usuario a crear.
+2022-01-11 18:02:53 INFO(Game) Game.py:line(352) -> 	Creando nuevo usuario.
+2022-01-11 18:02:53 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe iratxe
+2022-01-11 18:02:53 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 18:02:53 DEBUG(User) User.py:line(87) -> No existe el usuario, lo añadimos al dataframe.
+2022-01-11 18:02:53 DEBUG(User) User.py:line(90) -> Actualizamos el csv con la info del dataframe
+2022-01-11 18:02:53 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de iratxe
+2022-01-11 18:02:53 DEBUG(User) User.py:line(42) -> Creamos el score del usuario iratxe
+2022-01-11 18:02:56 INFO(Game) Game.py:line(68) -> Jugando juego
+2022-01-11 18:02:58 INFO(Game) Game.py:line(97) -> Jugando al juego.
+2022-01-11 18:02:58 DEBUG(Game) Game.py:line(102) -> Preparamos el target
+2022-01-11 18:02:59 DEBUG(Game) Game.py:line(106) -> Definimos el número de intentos.
+2022-01-11 18:03:00 DEBUG(Game) Game.py:line(113) -> Iniciando fase 1 de juego.
+2022-01-11 18:03:01 DEBUG(Game) Game.py:line(129) -> Iniciando fase 2 de juego.
+2022-01-11 18:03:04 DEBUG(Game) Objective.py:line(156) -> Comprobando si la frase existe
+2022-01-11 18:03:04 DEBUG(Game) Game.py:line(204) -> El jugador ha acertado la frase
+2022-01-11 18:03:04 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario iratxe
+2022-01-11 18:03:04 INFO(Game) Game.py:line(153) -> Fin juego.
+2022-01-11 18:50:46 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 18:50:46 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 18:50:46 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 18:50:46 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 18:50:46 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 18:50:46 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 18:50:46 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 18:50:53 INFO(Game) Game.py:line(291) -> Cambiamos de usuario
+2022-01-11 18:51:01 INFO(Game) Game.py:line(317) -> Cambiando de usuario.
+2022-01-11 18:51:01 DEBUG(Game) Game.py:line(319) -> Leyendo csv y guardando información en un dataframe
+2022-01-11 18:51:01 DEBUG(Game) Game.py:line(322) -> Solicitando nombre del usuario ....
+2022-01-11 18:51:45 DEBUG(Game) Game.py:line(325) -> Comprobando que el usuario insertado existe en el csv ....
+2022-01-11 18:51:45 DEBUG(Game) Game.py:line(329) -> El nombre de usuario existe, solicitando contraseña ....
+2022-01-11 18:51:47 DEBUG(Game) Game.py:line(333) -> Sobreescribimos el dataframe con un nuevo dataframe que contiene solo la fila del usuario
+2022-01-11 18:51:47 DEBUG(Game) Game.py:line(338) -> Comparamos las 2 contraseñas, y si coinciden, actualizamos el usuario activo
+2022-01-11 18:51:47 DEBUG(Game) Game.py:line(389) -> Definimos el usuario activo.
+2022-01-11 18:51:47 DEBUG(Game) Game.py:line(403) -> Existe el usuario peter en el fichero csv. Lo marcamos como activo y retornamos True.
+2022-01-11 18:51:47 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe peter
+2022-01-11 18:51:47 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 18:51:47 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 18:51:47 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de peter
+2022-01-11 18:51:47 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario peter
+2022-01-11 18:51:47 INFO(Game) Game.py:line(341) -> Usuario activo actualizado.
+2022-01-11 18:51:51 INFO(Game) Game.py:line(68) -> Jugando juego
+2022-01-11 18:51:53 INFO(Game) Game.py:line(97) -> Jugando al juego.
+2022-01-11 18:51:53 DEBUG(Game) Game.py:line(102) -> Preparamos el target
+2022-01-11 18:51:55 DEBUG(Game) Game.py:line(106) -> Definimos el número de intentos.
+2022-01-11 18:51:57 DEBUG(Game) Game.py:line(113) -> Iniciando fase 1 de juego.
+2022-01-11 18:51:59 DEBUG(Game) Game.py:line(129) -> Iniciando fase 2 de juego.
+2022-01-11 18:52:06 DEBUG(Game) Objective.py:line(104) -> Comprobando si la letra existe
+2022-01-11 18:52:06 DEBUG(Game) Game.py:line(173) -> El jugador no ha acertado la letra
+2022-01-11 18:52:32 DEBUG(Game) Objective.py:line(133) -> Comprobando si la palabra existe
+2022-01-11 18:52:32 DEBUG(Game) Game.py:line(191) -> El jugador no ha acertado la palabra
+2022-01-11 18:52:36 DEBUG(Game) Objective.py:line(156) -> Comprobando si la frase existe
+2022-01-11 18:52:36 DEBUG(Game) Game.py:line(208) -> El jugador no ha acertado la frase
+2022-01-11 18:52:39 DEBUG(Game) Objective.py:line(156) -> Comprobando si la frase existe
+2022-01-11 18:52:39 DEBUG(Game) Game.py:line(204) -> El jugador ha acertado la frase
+2022-01-11 18:52:39 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario peter
+2022-01-11 18:52:39 INFO(Game) Game.py:line(153) -> Fin juego.
+2022-01-11 18:53:16 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 18:53:16 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 18:53:16 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 18:53:16 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 18:53:16 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 18:53:16 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 18:53:16 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 18:53:18 INFO(Game) Game.py:line(68) -> Jugando juego
+2022-01-11 18:53:19 INFO(Game) Game.py:line(97) -> Jugando al juego.
+2022-01-11 18:53:19 DEBUG(Game) Game.py:line(102) -> Preparamos el target
+2022-01-11 18:53:38 DEBUG(Game) Game.py:line(106) -> Definimos el número de intentos.
+2022-01-11 18:53:40 DEBUG(Game) Game.py:line(113) -> Iniciando fase 1 de juego.
+2022-01-11 18:53:43 DEBUG(Game) Game.py:line(129) -> Iniciando fase 2 de juego.
+2022-01-11 18:53:46 DEBUG(Game) Objective.py:line(104) -> Comprobando si la letra existe
+2022-01-11 18:53:46 DEBUG(Game) Game.py:line(173) -> El jugador no ha acertado la letra
+2022-01-11 18:53:50 DEBUG(Game) Objective.py:line(133) -> Comprobando si la palabra existe
+2022-01-11 18:53:50 DEBUG(Game) Game.py:line(191) -> El jugador no ha acertado la palabra
+2022-01-11 18:53:54 DEBUG(Game) Objective.py:line(156) -> Comprobando si la frase existe
+2022-01-11 18:53:54 DEBUG(Game) Game.py:line(208) -> El jugador no ha acertado la frase
+2022-01-11 18:53:59 DEBUG(Game) Objective.py:line(104) -> Comprobando si la letra existe
+2022-01-11 18:53:59 DEBUG(Game) Game.py:line(168) -> El jugador ha acertado la letra
+2022-01-11 18:53:59 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 18:53:59 INFO(Game) Game.py:line(153) -> Fin juego.
+2022-01-11 18:55:46 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 18:55:46 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 18:55:46 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 18:55:46 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 18:55:46 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 18:55:46 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 18:55:47 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 18:55:51 INFO(Game) Game.py:line(291) -> Cambiamos de usuario
+2022-01-11 18:56:03 DEBUG(Game) Game.py:line(350) -> Solicitamos la info del usuario a crear.
+2022-01-11 18:56:10 INFO(Game) Game.py:line(362) -> 	Creando nuevo usuario.
+2022-01-11 18:56:10 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe Ane
+2022-01-11 18:56:10 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 18:56:10 DEBUG(User) User.py:line(87) -> No existe el usuario, lo añadimos al dataframe.
+2022-01-11 18:56:10 DEBUG(User) User.py:line(90) -> Actualizamos el csv con la info del dataframe
+2022-01-11 18:56:10 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de Ane
+2022-01-11 18:56:10 DEBUG(User) User.py:line(42) -> Creamos el score del usuario Ane
+2022-01-11 18:56:15 INFO(Game) Game.py:line(68) -> Jugando juego
+2022-01-11 18:56:16 INFO(Game) Game.py:line(97) -> Jugando al juego.
+2022-01-11 18:56:16 DEBUG(Game) Game.py:line(102) -> Preparamos el target
+2022-01-11 18:56:17 DEBUG(Game) Game.py:line(106) -> Definimos el número de intentos.
+2022-01-11 18:56:19 DEBUG(Game) Game.py:line(113) -> Iniciando fase 1 de juego.
+2022-01-11 18:56:28 DEBUG(Game) Game.py:line(129) -> Iniciando fase 2 de juego.
+2022-01-11 18:56:31 DEBUG(Game) Objective.py:line(104) -> Comprobando si la letra existe
+2022-01-11 18:56:31 DEBUG(Game) Game.py:line(173) -> El jugador no ha acertado la letra
+2022-01-11 18:56:32 DEBUG(Game) Objective.py:line(104) -> Comprobando si la letra existe
+2022-01-11 18:56:32 DEBUG(Game) Game.py:line(173) -> El jugador no ha acertado la letra
+2022-01-11 18:56:36 DEBUG(Game) Objective.py:line(133) -> Comprobando si la palabra existe
+2022-01-11 18:56:36 DEBUG(Game) Game.py:line(191) -> El jugador no ha acertado la palabra
+2022-01-11 18:56:38 DEBUG(Game) Objective.py:line(133) -> Comprobando si la palabra existe
+2022-01-11 18:56:38 DEBUG(Game) Game.py:line(191) -> El jugador no ha acertado la palabra
+2022-01-11 18:56:42 DEBUG(Game) Objective.py:line(156) -> Comprobando si la frase existe
+2022-01-11 18:56:42 DEBUG(Game) Game.py:line(208) -> El jugador no ha acertado la frase
+2022-01-11 18:56:44 DEBUG(Game) Objective.py:line(156) -> Comprobando si la frase existe
+2022-01-11 18:56:44 DEBUG(Game) Game.py:line(208) -> El jugador no ha acertado la frase
+2022-01-11 18:56:48 DEBUG(Game) Objective.py:line(104) -> Comprobando si la letra existe
+2022-01-11 18:56:48 DEBUG(Game) Game.py:line(168) -> El jugador ha acertado la letra
+2022-01-11 18:56:48 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario Ane
+2022-01-11 18:56:48 INFO(Game) Game.py:line(153) -> Fin juego.
+2022-01-11 18:57:02 INFO(Game) Game.py:line(70) -> Fin jugando juego
+2022-01-11 18:57:05 INFO(Game) Game.py:line(264) -> Mostrando Rankings
+2022-01-11 18:57:05 DEBUG(Game) Game.py:line(267) -> Guardamos la info del ranking en un dataframe
+2022-01-11 18:57:05 DEBUG(Game) Game.py:line(270) -> Mostramos la info del usuario activo
+2022-01-11 18:57:39 INFO(MAIN) main.py:line(11) -> Inicio Programa.
+2022-01-11 18:57:39 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe guest
+2022-01-11 18:57:39 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 18:57:39 DEBUG(User) User.py:line(94) -> Existe el usuario, no hace falta añadirlo al dataframe..
+2022-01-11 18:57:39 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de guest
+2022-01-11 18:57:39 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario guest
+2022-01-11 18:57:39 INFO(Game) Game.py:line(31) -> Iniciando menú
+2022-01-11 18:57:43 INFO(Game) Game.py:line(264) -> Mostrando Rankings
+2022-01-11 18:57:43 DEBUG(Game) Game.py:line(267) -> Guardamos la info del ranking en un dataframe
+2022-01-11 18:57:43 DEBUG(Game) Game.py:line(270) -> Mostramos la info del usuario activo
+2022-01-11 18:57:43 DEBUG(Game) Game.py:line(274) -> Ordenamos la información
+2022-01-11 18:57:43 DEBUG(Game) Game.py:line(276) -> Mostramos el resto de información
+2022-01-11 18:57:43 INFO(Game) Game.py:line(280) -> Fin mostrando Rankings
+2022-01-11 18:58:26 INFO(Game) Game.py:line(291) -> Cambiamos de usuario
+2022-01-11 18:58:29 DEBUG(Game) Game.py:line(350) -> Solicitamos la info del usuario a crear.
+2022-01-11 18:58:41 INFO(Game) Game.py:line(362) -> 	Creando nuevo usuario.
+2022-01-11 18:58:41 DEBUG(User) User.py:line(17) -> Creamos el usuario si no existe agurtzane
+2022-01-11 18:58:41 INFO(User) User.py:line(79) -> Añadimos el usuario al fichero users.csv
+2022-01-11 18:58:41 DEBUG(User) User.py:line(87) -> No existe el usuario, lo añadimos al dataframe.
+2022-01-11 18:58:41 DEBUG(User) User.py:line(90) -> Actualizamos el csv con la info del dataframe
+2022-01-11 18:58:41 DEBUG(User) User.py:line(20) -> Actualizamos el score con el fichero de rankings de agurtzane
+2022-01-11 18:58:41 DEBUG(User) User.py:line(42) -> Creamos el score del usuario agurtzane
+2022-01-11 18:58:44 INFO(Game) Game.py:line(264) -> Mostrando Rankings
+2022-01-11 18:58:44 DEBUG(Game) Game.py:line(267) -> Guardamos la info del ranking en un dataframe
+2022-01-11 18:58:44 DEBUG(Game) Game.py:line(270) -> Mostramos la info del usuario activo
+2022-01-11 18:58:44 DEBUG(Game) Game.py:line(274) -> Ordenamos la información
+2022-01-11 18:58:44 DEBUG(Game) Game.py:line(276) -> Mostramos el resto de información
+2022-01-11 18:58:44 INFO(Game) Game.py:line(280) -> Fin mostrando Rankings
+2022-01-11 18:58:59 INFO(Game) Game.py:line(68) -> Jugando juego
+2022-01-11 18:59:00 INFO(Game) Game.py:line(97) -> Jugando al juego.
+2022-01-11 18:59:00 DEBUG(Game) Game.py:line(102) -> Preparamos el target
+2022-01-11 18:59:02 DEBUG(Game) Game.py:line(106) -> Definimos el número de intentos.
+2022-01-11 18:59:02 DEBUG(Game) Game.py:line(113) -> Iniciando fase 1 de juego.
+2022-01-11 18:59:04 DEBUG(Game) Game.py:line(129) -> Iniciando fase 2 de juego.
+2022-01-11 18:59:05 DEBUG(Game) Objective.py:line(104) -> Comprobando si la letra existe
+2022-01-11 18:59:05 DEBUG(Game) Game.py:line(168) -> El jugador ha acertado la letra
+2022-01-11 18:59:05 DEBUG(User) User.py:line(51) -> Actualizamos el score del usuario agurtzane
+2022-01-11 18:59:05 INFO(Game) Game.py:line(153) -> Fin juego.
+2022-01-11 18:59:08 INFO(Game) Game.py:line(70) -> Fin jugando juego
+2022-01-11 18:59:09 INFO(Game) Game.py:line(264) -> Mostrando Rankings
+2022-01-11 18:59:09 DEBUG(Game) Game.py:line(267) -> Guardamos la info del ranking en un dataframe
+2022-01-11 18:59:09 DEBUG(Game) Game.py:line(270) -> Mostramos la info del usuario activo
+2022-01-11 18:59:09 DEBUG(Game) Game.py:line(274) -> Ordenamos la información
+2022-01-11 18:59:09 DEBUG(Game) Game.py:line(276) -> Mostramos el resto de información
+2022-01-11 18:59:09 INFO(Game) Game.py:line(280) -> Fin mostrando Rankings
+2022-01-11 18:59:30 INFO(Game) Game.py:line(376) -> Saliendo de menú
+2022-01-11 18:59:30 INFO(Game) Game.py:line(378) -> Fin Programa.
